@@ -57,7 +57,10 @@
 
 PVE
 
-<img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/1788ea72-7e5f-43c8-8790-f565181e6ed1" width="320" height="180"/>
+<img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/8c22e107-0a7e-4d5a-bf8e-d9d69df664dd" width="320" height="180"/>
+<img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/c4e8f2e5-bf3b-4f02-a48c-0dd147f7b19b" width="320" height="180"/>
+<img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/28fe601f-9a95-4b97-920d-59b793f25c09" width="320" height="180"/>
+<img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/db842826-6f9b-42da-869d-2721d694d24b" width="320" height="180"/>
 
 PVP
 
