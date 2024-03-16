@@ -8,8 +8,12 @@
 
 개발 기간: 2023/10 ~ 2023/12<br>
     
-# 2. 프로젝트 구조도
+# 2. 프로젝트 구조
+### 1. 구조도
 <img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/5057156d-d11a-440a-b792-d19949219466" width="800" height="366"/>
+
+### 2. 클래스 다이어그램
+<img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/767a2a71-4a89-48e7-a625-ec0ecbc5fa5c"/>
 
 # 3. 프로젝트 설명
 ### 1. 로비 화면
