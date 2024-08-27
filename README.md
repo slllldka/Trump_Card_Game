@@ -61,16 +61,19 @@ Super Peer의 IP주소, 포트번호를 통해 Super Peer에 접속할 수 있�
 결과에 따라 칩을 얻거나 잃음<br>
 
 ### 4. 원카드 게임 화면
-<img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/77bf5e6e-dbe2-41c6-a615-18a3424a8c91" width="320" height="180"/>
+### PVE
+https://github.com/user-attachments/assets/e3d5afe4-735d-4dfc-b9b9-0e7b39bd377f
 
-PVE
+<img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/77bf5e6e-dbe2-41c6-a615-18a3424a8c91" width="320" height="180"/><br>
+
+### PVP
+https://github.com/user-attachments/assets/5a3727ad-0a38-4ae8-9be5-69b440a6615c
+
 
 <img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/8c22e107-0a7e-4d5a-bf8e-d9d69df664dd" width="320" height="180"/>
 <img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/c4e8f2e5-bf3b-4f02-a48c-0dd147f7b19b" width="320" height="180"/>
 <img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/28fe601f-9a95-4b97-920d-59b793f25c09" width="320" height="180"/>
 <img src="https://github.com/slllldka/Trump_Card_Game/assets/121309640/db842826-6f9b-42da-869d-2721d694d24b" width="320" height="180"/>
-
-PVP
 
 원카드의 일반적인 규칙을 적용<br>
 공격카드(A, 2, Joker), 수비카드(3), 특수카드(K, Q, J, 7) 로직 구현<br>
