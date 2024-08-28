@@ -5,7 +5,7 @@
 블랙잭, 원카드(PVE), 원카드(PVP)<br>
 
 클라이언트: Unity, C#을 사용하여 개발<br>
-서버: JAVA를 사용하여 개발(socket programming)<br>
+서버: JAVA, C#을 사용하여 개발(socket programming)<br>
 
 개발 기간: 2023/10 ~ 2023/12<br>
 
