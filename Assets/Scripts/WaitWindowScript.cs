@@ -39,6 +39,7 @@ public class WaitWindowScript : MonoBehaviour
             string rec = NetworkManager.nm.receivedWaitWindowQueue.Dequeue();
             if (rec.Equals("Existing Name")) {
                 message.text = "Name Exists!";
+                NetworkManager.nm.closeUdpClient();
             } else if (rec.StartsWith("Start")) {
                 GameManager.OneCard.name = inputField.text;
                 rec = rec.Substring(5);
@@ -59,6 +60,7 @@ public class WaitWindowScript : MonoBehaviour
             } else {
                 message.text = int.Parse(rec) + "/4";
                 inputField.interactable = false;
+                NetworkManager.nm.udp_nickname[0] = inputField.text;
                 startBtn.interactable = false;
                 if (!loading.activeSelf) {
                     loading.SetActive(true);
@@ -96,9 +98,12 @@ public class WaitWindowScript : MonoBehaviour
     }
 
     public void start() {
-        NetworkManager.nm.sendQueue.Enqueue("W"+inputField.text);
+        NetworkManager.nm.openUdpClient();
+        while(NetworkManager.nm.ex_port  == 0) { };
+        NetworkManager.nm.sendQueue.Enqueue("W"+inputField.text+"."+NetworkManager.nm.ex_port);
     }
     public void exit() {
+        NetworkManager.nm.closeUdpClient();
         NetworkManager.nm.sendQueue.Enqueue("WExit" + inputField.text);
         gameObject.SetActive(false);
     }

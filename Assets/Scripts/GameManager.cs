@@ -634,6 +634,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
     public void exitGame() {
+        NetworkManager.nm.initiate_udp_related_resources();
         SceneManager.LoadScene(1);
     }
 }

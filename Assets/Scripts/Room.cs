@@ -14,10 +14,14 @@ public class Room
 	System.Random random = new System.Random();
 
 	public Room(ClientInfo[] clients) {
-		players = new List<ClientInfo>();
-		foreach (ClientInfo client in clients) {
-			client.room = this;
-			players.Add(client);
+		if (clients != null) {
+			players = new List<ClientInfo>();
+			foreach (ClientInfo client in clients) {
+				client.room = this;
+				players.Add(client);
+			}
+		} else {
+			players = null;
 		}
 
 		currentDeck = new List<int>();
@@ -102,10 +106,12 @@ public class Room
 	}
 
 	public void broadcast(string data, ClientInfo except) {
-		foreach (ClientInfo client in players) {
-			if (!client.Equals(except))
-				client.sendQueue.Enqueue(data);
+		if (players != null) {
+			foreach (ClientInfo client in players) {
+				if (!client.Equals(except))
+					client.sendQueue.Enqueue(data);
+			}
+			Debug.Log("success");
 		}
-		Debug.Log("success");
 	}
 }
