@@ -111,4 +111,23 @@ public class Room {
 		}
 		System.out.println("success");
 	}
+	
+	public void HolePunch() {
+		String data_leader = "HolePunchL";
+		String data_participant = "HolePunchP";
+		for(int i=1;i<4;i++) {
+			data_leader += players.get(i).name;
+			data_leader += ':';
+			data_leader += players.get(i).socket.getInetAddress().getHostAddress();
+			data_leader += ':';
+			data_leader += players.get(i).udp_port;
+			data_leader +='/';
+		}
+		players.get(0).sendQueue.add(data_leader);
+
+		data_participant += players.get(0).socket.getInetAddress().getHostAddress();
+		data_participant += ':';
+		data_participant += players.get(0).udp_port;
+		broadcast(data_participant, players.get(0));
+	}
 }
